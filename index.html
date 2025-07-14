@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SortFlow.js</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo-title">SortFlow.js</div>
+
+      <!-- 🔸 Toggle Button for Mobile -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">☰</label>
+    
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#visualizer">Visualizer</a></li>
+        <li><a href="#algorithms">Algorithms</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero">
+  <div class="hero-content">
+    
+    <div class="hero-text">
+      <h1>Code That Moves With Meaning</h1>
+      <p>
+        SortFlow.js brings algorithms to life through animation and precision.  
+        Crafted with clarity and curiosity, it's a fusion of frontend beauty and logical depth.
+      </p>
+      <a href="#visualizer" class="cta-button">Try the Visualizer</a>
+      <div class="scroll-cue">↓ Scroll to Visualizer</div>
+    </div>
+
+    <div class="hero-image">
+      <img src="image2.jpg" alt="Abstract Sorting Background">
+    </div>
+    
+  </div>
+</section>
+
+<!-- Visualizer Section -->
+    <section id="visualizer">
+  <div class="visualizer-overlay"></div>
+
+  <div class="visualizer-container">
+    <h2>🔁 Sorting Visualizer</h2>
+    <p>
+      Choose an algorithm, generate chaos, and watch it fall into rhythm.  
+      Each step visualized, every motion meaningful.
+    </p>
+
+    <div class="controls">
+      <select id="algorithm-select">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+
+      <button id="generate-array">🎲 Generate Array</button>
+      <button id="start-sort">▶️ Sort</button>
+
+      <div class="slider-control">
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="1" max="100" value="50">
+      </div>
+    </div>
+
+    <div class="bars-container" id="bars-container">
+      <!-- JS renders animated bars here -->
+    </div>
+
+    <div class="loading-indicator" id="loading-indicator">Sorting in progress... ✨</div>
+    <div id="status-message" class="status-text"></div>
+
+    <p class="sort-hint">🔍 Tip: Play with speed + observe patterns. Merge is poetry, Bubble is patience.</p>
+  </div>
+</section>
+
+<!-- Algorithms Section -->
+<section id="algorithms">
+
+  <div class="algo-overlay"></div>
+
+  <div class="algo-container">
+    <h2>🧠 Sorting Algorithms Explained</h2>
+    <p>Understand the rhythm behind each sort — where data meets choreography.</p>
+
+    <div class="algo-cards">
+      <div class="algo-card bubble">
+        <h3>🫧 Bubble Sort</h3>
+        <p>Compares adjacent elements, pushes the largest to the end slowly — like bubbles rising through logic.</p>
+        <span class="label">Beginner-friendly • Stable</span>
+        <span class="complexity">Time: O(n²)</span>
+      </div>
+
+      <div class="algo-card merge">
+        <h3>🧩 Merge Sort</h3>
+        <p>Divides arrays into halves, sorts them recursively, then merges beautifully — like puzzle pieces fitting perfectly.</p>
+        <span class="label">Efficient • Divide & Conquer</span>
+        <span class="complexity">Time: O(n log n)</span>
+      </div>
+
+      <div class="algo-card quick">
+        <h3>⚡ Quick Sort</h3>
+        <p>Picks a pivot, places smaller elements on the left, larger on the right — like slicing chaos with precision.</p>
+        <span class="label">Fastest in practice • In-place</span>
+        <span class="complexity">Time: O(n log n)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 📝 Sprint Blog Section -->
+<section id="blog">
+  <div class="blog-wrapper">
+    <h2>📖 Creator’s Log</h2>
+    <p>A diary of breakthroughs, bugs, and banter — straight from my 40-day sprint journey.</p>
+
+    <article class="blog-post">
+      <div class="blog-header">
+        <span class="blog-day">Day 14</span>
+        <h3>SortFlow.js: Built With Rhythm</h3>
+      </div>
+      <p>2 hours, infinite vibes. Solved layout bugs, styled with intention. Today wasn’t just code — it felt like a performance.</p>
+      <div class="blog-tags">💻 #FrontendFlow &nbsp; ⚡ #SprintHigh &nbsp; 🎨 #MoodDriven</div>
+    </article>
+
+    <article class="blog-post">
+      <div class="blog-header">
+        <span class="blog-day">Day 13</span>
+        <h3>From Frustration to 400+</h3>
+      </div>
+      <p>Yesterday felt like silence. Today? Impressions burst past 400. One post changed my pace. I remembered why I create.</p>
+      <div class="blog-tags">📈 #LinkedInDiaries &nbsp; 🧠 #GrowthCurve &nbsp; 💫 #CreatorConfidence</div>
+    </article>
+
+    <article class="blog-post">
+      <div class="blog-header">
+        <span class="blog-day">Day 11</span>
+        <h3>Jhakkas Mood Activated</h3>
+      </div>
+      <p>Built with fire, laughed through the bugs. My favorite thing? Seeing my chaos turn into something beautiful.</p>
+      <div class="blog-tags">❤️ #SprintVibes &nbsp; 🎭 #DesignWithDrama &nbsp; 💡 #CodeFeels</div>
+    </article>
+  </div>
+</section>
+
+   <!-- 🧑‍💻 About Me Section -->
+<!-- 💁‍♀️ About Me Section -->
+<section id="about">
+  <div class="about-container">
+    <h2>🌟 Meet Hema Pandey</h2>
+    <p>
+      I’m Hema — a passionate front-end developer who started with pure <strong>HTML, CSS, and JavaScript</strong>, diving deep into core fundamentals. After building 10 utility-driven projects from scratch, I transitioned into the MERN stack to unlock new possibilities 🚀.
+    </p>
+
+    <p>
+      My journey blends <strong>code and creativity</strong> — from choreographing sorting algorithms to deploying resume checkers, I build projects that aren’t just functional, but expressive. I treat every UI as a canvas and every project as a chapter of growth 🎨📖.
+    </p>
+
+    <p>
+      Currently immersed in a 40-day sprint challenge, I create and blog daily — celebrating consistency, curiosity, and code. Whether you found me via GitHub or LinkedIn, welcome to my digital playground! 🌈💻
+    </p>
+
+    <div class="about-tags">
+      💻 HTML • CSS • JS &nbsp; ⚛️ MERN Builder &nbsp; 🔥 Sprint Creator &nbsp; 🎨 Visual Thinker &nbsp; 💬 LinkedIn Strategist
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>Crafted with ☕ & 💻 by Hema</p>
+    <div class="social-links">
+      <!-- Add LinkedIn, GitHub icons or text -->
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
